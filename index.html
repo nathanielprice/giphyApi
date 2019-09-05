@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIPHY Sports</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron bg-info shadow">
+            <h1 class="display-3 text-center">GIPHY Sports</h1>
+            <!-- Buttons  -->
+            <div id="btnDiv"></div>
+        </div>
+
+    </div>
+    <div class="container">
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <!-- Gifs  -->
+                <div id="gifsView"></div>
+            </div>
+             <!-- Action Submission Form  -->
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <form id="gif-form" role="form">
+                    <h2><legend>Sports Submission</legend></h2>
+                    <div class="form-group">
+                        <label for="action-input">Add your sport below</label>
+                        <input type="text" id="sport-input">
+                    </div>
+                    <input id="addGif" type="submit" value="Add your sport" class="btn btn-primary">
+                    <input id="removeGif" type="submit" value="Remove last sport" class="btn btn-primary">
+                </form>    
+            </div>
+        </div>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
