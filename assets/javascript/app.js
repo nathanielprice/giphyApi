@@ -2,7 +2,7 @@
 const API_KEY = 'Ag2URJctP1NH1qwbNIlUsFZrH60sh05S';
 const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}`;
 const giphys = ['soccer', 'puppies', 'tennis', 'beaches','sketeboarding'];
-let buttons = ['Cats', 'Dogs', 'Lions'];
+let buttons = ['puppies', 'falling', 'tripping'];
 let favorites = [];
 let isFavoriteOnly = false;
 let currentSearch = [];
