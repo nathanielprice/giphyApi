@@ -1,0 +1,150 @@
+body {
+    background-color:grey;
+}
+h1 {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: .9em;
+    font-weight: 800;
+}
+
+label, h1, #clear-message {
+    color: #fff;
+}
+
+.form #search {
+    border: 1px solid Grey;
+    box-shadow: none;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#clear-results {
+    width: 10em;
+}
+
+#clear-results, #submit-button{
+    margin-left: .5em;
+    border: 1px solid Grey;
+}
+
+#btn-star {
+    padding: .9em;
+}
+
+
+
+.recent-search {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.giphy-content {
+    column-count: 3;
+    column-gap: 1em;
+}
+
+
+.giphy {
+    border: 1px solid grey;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5em;
+    page-break-inside: avoid;
+    background-color: white;
+
+}
+
+.giphy img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.giphy-image {
+    cursor: pointer;
+}
+
+.fa-play {
+    opacity: 0;
+    position: absolute;
+    font-size: .9em;
+    top: 25%;
+    z-index: 1;
+    transform: translate(-50%, 0);
+    left: 50%;
+    padding: 1em;
+    border-radius: 50%;
+    color: #fff1e9;
+}
+
+.giphy-image:hover .img-play {
+    opacity: 1;
+}
+
+.favorite {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    padding: .5em;
+    cursor: pointer;
+    border-bottom-left-radius: .5em;
+}
+
+
+.giphy-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em .5em;
+}
+
+.giphy-footer {
+    text-align: center;
+    border: 1px solid lightgrey;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.buttons {
+    color: darkgray;
+    margin-left: 10px;
+    margin-bottom: 1em;
+    border: 1px solid lightsteelblue;
+}
+
+
+.active {
+    background-color:lightsteelblue;
+}
+
+.buttons:hover {
+    background-color: lightsteelblue;
+}
+
+.buttons button {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.buttons .btn:focus {
+    box-shadow: none;
+}
+
+
+.buttons .btn-close {
+    border-radius: 0;
+    border-left: 1px solid black;
+}
